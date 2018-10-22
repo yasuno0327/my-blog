@@ -1,0 +1,9 @@
+#! /bin/bash
+
+set -e
+
+yarn install
+yarn build
+yarn server
+
+exec "$@"

@@ -1,0 +1,24 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# binary and Test binary, build with `go test -c`
+/api/api
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# dep
+*/vendor
+Gopkg.lock
+
+# Ignore environment file
+*.env
+secrets.json
+
+# Ignore binary file and frontend
+/api/api
