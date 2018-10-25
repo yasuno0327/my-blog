@@ -8,11 +8,18 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 class SignInContainer extends React.Component {
+  editEmail = (email) => {
+    this.props.editEmail(email)
+  }
+  editPassword = (password) => {
+    this.props.editPassword(password)
+  }
   render() {
     return (
       <SignIn
         user={this.props.user}
-        editUser={this.props.editUser}
+        editEmail={this.editEmail}
+        editPassword={this.editPassword}
       />
     )
   }
