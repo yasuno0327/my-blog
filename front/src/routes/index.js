@@ -1,7 +1,7 @@
 import React from 'react'
-import { HomeContainer } from '../containers'
+import { HomeContainer, SignInContainer } from '../containers'
 import { Header } from '../components'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.div`text-align: center;`
@@ -11,7 +11,10 @@ function Routes() {
     <Router>
       <Container>
         <Header />
-        <Route path='/' component={HomeContainer} />
+        <Switch>
+          <Route exact path='/' component={HomeContainer} />
+          <Route path='/signin' component={SignInContainer} />
+        </Switch>
       </Container>
     </Router>
   )

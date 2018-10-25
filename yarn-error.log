@@ -1,0 +1,31 @@
+Arguments: 
+  /usr/local/Cellar/node/10.12.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js start
+
+PATH: 
+  /Users/yasunoyoshitomo/google-cloud-sdk/bin:/usr/local/Cellar/pyenv/shims:/Users/yasunoyoshitomo/.rbenv/shims:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/local/bin:/usr/local/sbin:/Users/yasunoyoshitomo/google-cloud-sdk/bin:/usr/local/Cellar/pyenv/shims:/Users/yasunoyoshitomo/.rbenv/shims:/usr/local/opt/openssl/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yasunoyoshitomo/go/src:/Users/yasunoyoshitomo/.nodebrew/current/bin:/Users/yasunoyoshitomo/go/bin:/Users/yasunoyoshitomo/go/src:/Users/yasunoyoshitomo/.nodebrew/current/bin:/Users/yasunoyoshitomo/go/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.12.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "/Users/yasunoyoshitomo/go/src/my-blog"
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
