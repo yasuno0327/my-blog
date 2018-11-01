@@ -1,4 +1,4 @@
-import { EDIT_EMAIL, EDIT_PASSWORD } from '../constants/ActionTypes'
+import { EDIT_EMAIL, EDIT_PASSWORD, SIGN_IN } from '../constants/ActionTypes'
 
 const initialState = {
   firstname: '',
@@ -17,6 +17,8 @@ export default function user(state = initialState, action) {
       return Object.assign({}, state, {
         email: action.payload
       })
+    case SIGN_IN:
+      return state
     default:
       return state
   }

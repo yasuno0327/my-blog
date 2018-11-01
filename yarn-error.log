@@ -2,7 +2,7 @@ Arguments:
   /usr/local/Cellar/node/10.12.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js start
 
 PATH: 
-  /Users/yasunoyoshitomo/google-cloud-sdk/bin:/usr/local/Cellar/pyenv/shims:/Users/yasunoyoshitomo/.rbenv/shims:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/local/bin:/usr/local/sbin:/Users/yasunoyoshitomo/google-cloud-sdk/bin:/usr/local/Cellar/pyenv/shims:/Users/yasunoyoshitomo/.rbenv/shims:/usr/local/opt/openssl/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yasunoyoshitomo/go/src:/Users/yasunoyoshitomo/.nodebrew/current/bin:/Users/yasunoyoshitomo/go/bin:/Users/yasunoyoshitomo/go/src:/Users/yasunoyoshitomo/.nodebrew/current/bin:/Users/yasunoyoshitomo/go/bin
+  /Users/yasunoyoshitomo/google-cloud-sdk/bin:/usr/local/Cellar/pyenv/shims:/Users/yasunoyoshitomo/.rbenv/shims:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yasunoyoshitomo/go/src:/Users/yasunoyoshitomo/.nodebrew/current/bin:/Users/yasunoyoshitomo/go/bin
 
 Yarn version: 
   1.5.1

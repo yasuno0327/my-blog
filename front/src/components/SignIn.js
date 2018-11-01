@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Checkbox, Form, Container, Header } from 'semantic-ui-react'
 
-function SignIn({user, editEmail, editPassword}) {
+function SignIn({user, editEmail, editPassword, signIn}) {
   return (
     <Container className='signin-container'>
       <Form className='signin-form'>
@@ -20,7 +20,7 @@ function SignIn({user, editEmail, editPassword}) {
             onChange={(e) => editPassword(e.target.value)}
           />
         </Form.Field>
-        <Button type='submit'>Submit</Button>
+        <Button type='submit' onClick={signIn}>Submit</Button>
       </Form>
     </Container>
   )

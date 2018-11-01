@@ -14,12 +14,16 @@ class SignInContainer extends React.Component {
   editPassword = (password) => {
     this.props.editPassword(password)
   }
+  signIn = () => {
+    this.props.signIn()
+  }
   render() {
     return (
       <SignIn
         user={this.props.user}
         editEmail={this.editEmail}
         editPassword={this.editPassword}
+        signIn={this.signIn}
       />
     )
   }
