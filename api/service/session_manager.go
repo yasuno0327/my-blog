@@ -1,6 +1,7 @@
 package service
 
 import (
+	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 )
@@ -17,4 +18,11 @@ func SessionClear(context interface{}) {
 	session := sessions.Default(c)
 	session.Clear()
 	session.Save()
+}
+
+func GenerateJWT(email string) {
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
+		"email": email,
+		"expired_date": time.Date(2018, time.December)
+	})
 }

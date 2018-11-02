@@ -37,3 +37,7 @@
 [[constraint]]
   name = "github.com/google/go-cloud"
   version = "0.3.0"
+
+[[constraint]]
+  name = "github.com/dgrijalva/jwt-go"
+  version = "3.2.0"
