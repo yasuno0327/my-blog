@@ -5,6 +5,11 @@
 *.so
 *.dylib
 
+# Ignore secret files
+*.rsa
+*.rsa.pub
+*.rsa.pub.pkcs8
+
 # binary and Test binary, build with `go test -c`
 /api/api
 *.test
