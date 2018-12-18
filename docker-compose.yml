@@ -3,7 +3,7 @@ version: "3"
 services:
   front:
     tty: true
-    container_name: shokubunka_front
+    container_name: myblog_front
     build:
       context: ./front
     entrypoint: /app/startserver.sh
@@ -17,6 +17,7 @@ services:
       - my-app-default
 
   nginx:
+    container_name: myblog_proxy
     tty: true
     build:
       context: ./nginx
@@ -29,7 +30,7 @@ services:
 
   api:
     tty: true
-    container_name: shokubunka_api
+    container_name: myblog_api
     entrypoint: /go/src/api/startserver.sh
     build:
       context: ./api
@@ -47,7 +48,7 @@ services:
 
   redis:
     restart: always
-    container_name: shokubunka_redis
+    container_name: myblog_redis
     image: redis:4.0
     # volumes: to parmanet
     #   - /my/own/datadir:/data
@@ -58,7 +59,7 @@ services:
 
   db:
     restart: always
-    container_name: shokubunka_db
+    container_name: myblog_db
     build:
       context: ./db
     # volumes: to parmanent

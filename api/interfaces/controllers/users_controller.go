@@ -6,6 +6,7 @@ import (
 	"api/interfaces/database"
 	"api/service"
 	"api/usecase"
+	"log"
 
 	"github.com/gin-gonic/gin/binding"
 	"github.com/jinzhu/gorm"
@@ -49,8 +50,10 @@ func (controller *UserController) SignIn(c Context, b binding.Binding) {
 		c.JSON(400, NewError(err))
 		return
 	}
-	service.SessionSet(c, u.ID)
-	c.JSON(200, serializer.UserResponse{FirstName: u.FirstName, LastName: u.LastName, NickName: u.NickName, CreatedAt: u.CreatedAt})
+	//service.SessionSet(c, u.ID) Set session id to cookie
+	token := service.GenerateJWT(u.Email)
+	log.Println(token)
+	c.JSON(200, serializer.UserResponse{FirstName: u.FirstName, LastName: u.LastName, NickName: u.NickName, Token: token, CreatedAt: u.CreatedAt})
 }
 
 func (controller *UserController) SignOut(c Context) {
