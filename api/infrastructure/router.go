@@ -1,7 +1,6 @@
 package infrastructure
 
 import (
-	"api/domain"
 	"api/infrastructure/config"
 	"api/infrastructure/middleware"
 	"api/interfaces/controllers"
@@ -14,8 +13,6 @@ import (
 	"github.com/gin-contrib/sessions/redis"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"github.com/qor/admin"
-	"github.com/qor/validations"
 )
 
 var Router *gin.Engine
@@ -33,17 +30,6 @@ func init() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	// Admin config & routing
-	Admin := admin.New(&admin.AdminConfig{
-		DB:       sqlhandler,
-		SiteName: "Hungry Researchers",
-	})
-	user := Admin.AddResource(&domain.User{})
-	AddResourceValidator(user)
-	defineUserMetaInfo(user)
-	Admin.MountTo("/admin", mux)
-	router.Any("/admin/*resources", gin.WrapH(mux))
 
 	// Session Setting
 	store, _ := redis.NewStore(10, "tcp", "redis:6379", "", []byte("secret"))
