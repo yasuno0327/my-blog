@@ -7,8 +7,6 @@ until mysqladmin ping -h db --silent; do
   sleep 1
 done
 
-dep ensure
-
 go build
 ./api
 

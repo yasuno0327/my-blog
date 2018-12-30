@@ -21,15 +21,9 @@ require (
 	github.com/mattn/go-isatty v0.0.4
 	github.com/microcosm-cc/bluemonday v1.0.1
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742
-	github.com/qor/admin v0.0.0-20181026061101-0ef7c2aa0f33
-	github.com/qor/assetfs v0.0.0-20170713023933-ff57fdc13a14
-	github.com/qor/middlewares v0.0.0-20170822143614-781378b69454
-	github.com/qor/responder v0.0.0-20171031032654-b6def473574f // indirect
-	github.com/qor/roles v0.0.0-20171127035124-d6375609fe3e
-	github.com/qor/session v0.0.0-20170907035918-8206b0adab70
 	github.com/theplant/cldr v0.0.0-20170713054817-b97a4c2a76cf
 	github.com/ugorji/go v1.1.1
-	go.opencensus.io v0.18.0
+	contrib.go.opencensus.io/exporter/aws v0.18.0
 	golang.org/x/net v0.0.0-20181101160248-e11730110bbd
 	golang.org/x/oauth2 v0.0.0-20181102003913-e0f2c55a7fc7
 	golang.org/x/text v0.3.0
