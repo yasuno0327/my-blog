@@ -1,13 +1,9 @@
 package infrastructure
 
 import (
-	"api/infrastructure/config"
 	"api/infrastructure/middleware"
 	"api/interfaces/controllers"
 	"api/interfaces/database"
-	"context"
-	"log"
-	"net/http"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/redis"
@@ -19,17 +15,12 @@ var Router *gin.Engine
 
 func init() {
 	router := gin.Default()
-	mux := http.NewServeMux()
+	// mux := http.NewServeMux()
 	sqlhandler := database.NewSQLHandler()
 
 	//
 	Migrate(sqlhandler)
-	validations.RegisterCallbacks(sqlhandler)
-	ctx := context.Background()
-	blob, err := config.Setup(ctx, "gcp")
-	if err != nil {
-		log.Fatal(err)
-	}
+	// validations.RegisterCallbacks(sqlhandler)
 
 	// Session Setting
 	store, _ := redis.NewStore(10, "tcp", "redis:6379", "", []byte("secret"))
@@ -42,12 +33,6 @@ func init() {
 	v1.Use(middleware.AuthMiddleware())
 
 	// ImageUploader
-	images := v1.Group("/images")
-	imageController := controllers.NewImageController()
-	images.Use(middleware.ResourcePermissionMiddleware())
-	images.POST("/upload", func(c *gin.Context) {
-		imageController.Upload(c, blob, ctx)
-	})
 
 	// Users
 	users := v1.Group("/users")
