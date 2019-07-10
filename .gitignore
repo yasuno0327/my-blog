@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+node_modules
 
 # Ignore secret files
 *.rsa
