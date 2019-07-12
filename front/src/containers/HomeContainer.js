@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Home } from '../components'
 import * as HomeActions from '../actions/home'
 import { createStructuredSelector, createSelector } from 'reselect'

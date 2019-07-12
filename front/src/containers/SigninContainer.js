@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { SignIn } from '../components'
 import * as SignInActions from '../actions/signin'
 import { createStructuredSelector, createSelector } from 'reselect'
