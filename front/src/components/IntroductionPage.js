@@ -11,7 +11,7 @@ function IntroductionPage() {
             <Card.Content>
               <Card.Header>楊野 良智</Card.Header>
               <Card.Meta>
-                <span className='birthday'>Born on 1997/03/27</span>
+                <span className='birthday'>Born in 1997/03/27</span>
               </Card.Meta>
               <Card.Description>出身地埼玉県</Card.Description>
             </Card.Content>
@@ -44,10 +44,10 @@ function IntroductionPage() {
           <Container className='description'>
             <Header as='h2'>ご訪問頂きありがとうございます。</Header>
             <p className='description-text'>
-              こんにちは、このサイトでは主に私(Yasu)が普段使っている技術や、最近話題になっている技術に<br /><br />
-              関してブログ形式で意見を投稿していきます。<br /><br />
-              主にGolang, Docker, Security関係の話題を投稿していきます。<br /><br />
-              ところどころミスがあると思います、その際はご指摘して頂けたら幸いです！<br /><br />
+              こんにちは、このサイトでは主に私(Yasu)が普段使っている技術や、最近話題になっている技術に<br />
+              関してブログ形式で意見を投稿していきます。<br />
+              主にGolang, Docker, Security関係の話題を投稿していきます。<br />
+              ところどころミスがあると思います、その際はご指摘して頂けたら幸いです！<br />
             </p>
           </Container>
           <Container className='my-history'>
