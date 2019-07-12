@@ -11,6 +11,7 @@ class SignInContainer extends React.Component {
     this.props.editEmail(email)
   }
   editPassword = (password) => {
+    console.log(this.props.user)
     this.props.editPassword(password)
   }
   signIn = () => {

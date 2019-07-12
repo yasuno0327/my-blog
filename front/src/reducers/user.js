@@ -15,7 +15,7 @@ export default function user(state = initialState, action) {
       })
     case EDIT_PASSWORD:
       return Object.assign({}, state, {
-        email: action.payload
+        password: action.payload
       })
     case SIGN_IN:
       return state
