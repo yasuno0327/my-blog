@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Checkbox, Form, Container, Header } from 'semantic-ui-react'
+import { Button, Form, Container, Header } from 'semantic-ui-react'
 
 function SignIn({user, editEmail, editPassword, signIn}) {
   return (
