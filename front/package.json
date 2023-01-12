@@ -5,9 +5,9 @@
   "author": "Yoshitomo Yasuno",
   "dependencies": {
     "prop-types": "^15.6.2",
-    "ra-data-json-server": "^2.4.0",
+    "ra-data-json-server": "^2.9.9",
     "react": "^16.5.1",
-    "react-admin": "^2.4.0",
+    "react-admin": "^4.7.0",
     "react-dom": "^16.5.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
